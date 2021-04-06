@@ -9,11 +9,13 @@
       "views/*": ["client/views/*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "files": ["webix.global.d.ts"],
   "include": [
     "client/**/*.ts"
+  ],
+  "files": [
+    "node_modules/webix/types/webix.global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
