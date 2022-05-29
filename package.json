@@ -2,9 +2,12 @@
   "name": "translater",
   "version": "0.0.1",
   "description": "",
-  "main": "app.ts",
+  "main": "private/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-all": "npm run watch-server & npm run watch-client & nodemon --inspect private/server.js",
+    "watch-server": "tsc -p client/tsconfig.json -inlineSourceMap -outDir private --watch",
+    "watch-client": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -25,10 +28,13 @@
   },
   "homepage": "https://github.com/SlavikusVOG/Translater#readme",
   "devDependencies": {
+    "@types/node": "^15.12.4",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
+    "@typescript-eslint/parser": "^4.27.0",
     "eslint": "^7.23.0",
     "express": "^4.17.1",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
     "webix": "^8.2.0",
     "webix-jet": "^2.1.3",
     "webpack": "^5.30.0",

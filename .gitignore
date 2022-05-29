@@ -105,3 +105,9 @@ dist
 
 # Webstorm
 .idea/
+
+#public
+.public/
+
+#private
+.private/

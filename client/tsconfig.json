@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es6"],
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "models/*": ["sources/models/*"],
+      "views/*": ["sources/views/*"]
+    }
+  },
+  "include": [
+    "sources/**/*.ts"
+  ],
+  "exclude": [
+    "../node_modules"
+  ],
+  "files":[
+    "../node_modules/webix/types/webix.global.d.ts"
+  ]
+}
