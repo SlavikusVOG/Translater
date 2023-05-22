@@ -1,22 +1,25 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
     "module": "commonjs",
     "target": "es5",
     "lib": ["es6"],
-    "sourceMap": true,
+    // "sourceMap": true,
     "baseUrl": "./",
     "paths": {
       "models/*": ["sources/models/*"],
-      "views/*": ["sources/views/*"]
+      "views/*": ["sources/views/main/*"]
     }
   },
   "include": [
     "sources/**/*.ts"
   ],
   "exclude": [
-    "../node_modules"
+    "node_modules"
   ],
   "files":[
-    "../node_modules/webix/types/webix.global.d.ts"
+    "node_modules/webix/types/webix.global.d.ts"
   ]
 }

@@ -3,7 +3,7 @@ const webpack = require("webpack");
 
 module.exports = {
     entry: {
-        app: "./client/sources/app.ts"
+        app: "./sources/app.ts"
     },
     output: {
         filename: "[name].bundle.js",
@@ -12,15 +12,15 @@ module.exports = {
     mode: "development",
     resolve: {
         alias: {
-            "jet-views":path.resolve(__dirname, "client/sources/views"),
-            "jet-locales":path.resolve(__dirname, "client/sources/locales")
+            "jet-views":path.resolve(__dirname, "sources/views"),
+            "jet-locales":path.resolve(__dirname, "sources/locales")
         },
         extensions: [".ts", ".js"],
     },
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.ts$/,
                 use: "ts-loader",
                 exclude: /node_modules/,
             },
