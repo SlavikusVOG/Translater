@@ -6,16 +6,18 @@ declare const PRODUCTION;
 declare const BUILD_AS_MODULE;
 
 export default class App extends JetApp {
-    constructor(config = {}) {
-        const defaults = {
-            id: APPNAME,
-            version: VERSION,
-            debug: !PRODUCTION,
-            start: "/top/start"
-        };
+  constructor(config = {}) {
+    const defaults = {
+      id: APPNAME,
+      version: VERSION,
+      debug: !PRODUCTION,
+      views: [
 
-        super({...defaults, ...config});
-    }
+      ],
+      start: "/top/start"
+    };
+    super({...defaults, ...config});
+  }
 }
 
 if(!BUILD_AS_MODULE) {
