@@ -111,3 +111,9 @@ public/
 
 #private
 private/
+
+#VSCode
+.vscode/
+
+#Build
+build/
