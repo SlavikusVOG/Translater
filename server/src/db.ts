@@ -15,7 +15,7 @@ const cardSchema = new mongoose.Schema({
 
 const Card = mongoose.model('Card', cardSchema);
 
-const count = Card.countDocuments({}, (err, count) => {
+const count = Card.countDocuments({}, (err: any, count: number) => {
     if (count < 1) {
         const defaultWord = new Card({ word: 'Привет мир', translate: 'Hello world'});
         defaultWord.save().then(() => console.log('meow'));
