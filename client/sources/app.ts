@@ -1,9 +1,9 @@
 import {JetApp} from "webix-jet";
 
-declare const APPNAME;
-declare const VERSION;
-declare const PRODUCTION;
-declare const BUILD_AS_MODULE;
+declare const APPNAME: any;
+declare const VERSION: any;
+declare const PRODUCTION: any;
+declare const BUILD_AS_MODULE: any;
 
 export default class App extends JetApp {
   constructor(config = {}) {
