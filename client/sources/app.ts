@@ -1,4 +1,7 @@
 import {JetApp} from "webix-jet";
+import mainView from "views/view";
+import footerView from "./views/footer/view";
+import headerView from "./views/header/view";
 
 declare const APPNAME: any;
 declare const VERSION: any;
@@ -12,7 +15,7 @@ export default class App extends JetApp {
       version: VERSION,
       debug: !PRODUCTION,
       views: [
-
+        
       ],
       start: "/top/start"
     };
