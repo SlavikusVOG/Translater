@@ -13,7 +13,8 @@
     "paths": {
       "models/*": ["sources/models/*"],
       "views/*": ["sources/views/main/*"]
-    }
+    },
+    "esModuleInterop": true,
   },
   "include": [
     "sources/**/*.ts"
